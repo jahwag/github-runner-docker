@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y \
 USER runner
 
 # Copy entrypoint script
-COPY entrypoint.sh /home/runner/entrypoint.sh
+COPY --chmod=755 entrypoint.sh /home/runner/entrypoint.sh
 
 # Define default command
 ENTRYPOINT ["/home/runner/entrypoint.sh"]

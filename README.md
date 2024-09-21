@@ -25,7 +25,7 @@ docker run -d \
   -e GITHUB_TOKEN=your_personal_access_token \
   -e GITHUB_URL=https://github.com/your-username \
   -e REPO=your-repo \
-  github-runner
+  ghcr.io/jahwag/github-runner-docker:master
 ```
 
 #### For an Organization Runner:
@@ -35,7 +35,7 @@ docker run -d \
   --name github-runner \
   -e GITHUB_TOKEN=your_personal_access_token \
   -e GITHUB_URL=https://github.com/your-org \
-  github-runner
+  ghcr.io/jahwag/github-runner-docker:master
 ```
 
 ## Environment Variables
